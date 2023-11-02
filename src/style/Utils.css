@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"); /*Young serif*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"); /*Roboto*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"); /* Ubuntu*/
+:root {
+    --font1: "Young Serif", serif;
+    --font2: "Roboto Condensed", sans-serif;
+    --font3: "Ubuntu", sans-serif;
+}
+.card{
+    transition:background 0.5s ,transform 0.3s;
+
+}
+.card:hover
+{
+    transform: scale(1.1);
+
+}
+.footStyle{
+    font-family: var(--font2);
+    font-size: 20px;
+}
+.activeLink:after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background:#ff004f;
+    /* transition: all 0.9s ease-in-out; */
+}
+ .activeLink:after{
+    width: 100%;
+    transition:0.5s;
+ }
+
+
+ /* NAVBAR */
+ .newsreader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .nav-item{
+    padding: 0 15px;
+  }
+  .nav-item:hover{
+    color: red;
+  }
+  .login{
+    transition: all 0.5s ease-in-out;
+  }
+  .login:hover{
+    background-color: #0080ff6a;
+  }
+  
+
+  /* ZOOM IN and out */
+  .success{
+    animation: blink 1.4s ease infinite  ;
+}
+@keyframes blink{
+    0%{opacity: 0.2;}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+}
+ 
